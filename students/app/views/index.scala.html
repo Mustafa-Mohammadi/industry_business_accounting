@@ -1,0 +1,14 @@
+@(message: String)
+
+@main("Welcome to Play 2.1") {
+    
+   @message
+   <form action = "@routes.Application.addStudent()" method = "post">
+   <p> Student Id : </p> <input id = "id">
+   <p> Student Name :</p> <input name = "name">
+   <p> Student LastName : <br/>
+   <textarea name = "lastName"></textarea><br/>
+   <input type = "submit">
+   </form>
+    
+}
